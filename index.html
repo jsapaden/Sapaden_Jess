@@ -16,7 +16,7 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About Me</a></li>
         <li><a href="#education">Education</a></li>
-        <li><a href="#practice">Projects</a></li>
+        <li><a href="#projects-section">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
@@ -30,7 +30,7 @@
         </div>
         <h1>Hi, I'm <span>Jess Sapaden</span></h1>
         <p>3rd Year BS Computer Science Student | City College of Angeles</p>
-        <a href="#practice" class="btn">View My Tasks</a>
+        <a href="#projects-section" class="btn">View My Tasks</a>
     </div>
 </section>
 
@@ -54,90 +54,165 @@
     </div>
 </section>
 
-<section id="practice">
-    <h2 class="section-title"><span>Practice Tasks</span></h2>
-    <div class="projects-grid">
+<section id="projects-section">
+    <h2 class="section-title"><span>My Academic Tasks</span></h2>
+    
+    <div class="tab-container">
+        <button class="tab-btn active" onclick="openTab(event, 'practice-tasks')">Practice Tasks</button>
+        <button class="tab-btn" onclick="openTab(event, 'midterm-tasks')">Midterm Tasks</button>
+        <button class="tab-btn" onclick="openTab(event, 'finals-tasks')">Finals Tasks</button>
+    </div>
 
-        <div class="project-card">
-            <div class="project-image"><i class="fas fa-laptop-code"></i></div>
-            <div class="project-info">
-                <h3>Practice Task 1</h3>
-                <p class="task-description"><strong>Description:</strong> Data Preparation and Cleaning</p>
-                <a href="https://docs.google.com/spreadsheets/d/1Qcu77f6IHU7qVrtIbNexlBboZjOi3rza/edit?usp=sharing" target="_blank">Open File</a>
-                <img src="image/DataCleaning.png" class="task-screenshot-img" alt="Task 1 Screenshot">
+    <div id="practice-tasks" class="tab-content active-content">
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image"><i class="fas fa-laptop-code"></i></div>
+                <div class="project-info">
+                    <h3>Practice Task 1</h3>
+                    <p class="task-description"><strong>Description:</strong> Data Preparation and Cleaning</p>
+                    <a href="https://docs.google.com/spreadsheets/d/1Qcu77f6IHU7qVrtIbNexlBboZjOi3rza/edit?usp=sharing" target="_blank">Open File</a>
+                    <img src="image/DataCleaning.png" class="task-screenshot-img" alt="Task 1 Screenshot">
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image"><i class="fas fa-laptop-code"></i></div>
+                <div class="project-info">
+                    <h3>Practice Task 2</h3>
+                    <p class="task-description"><strong>Description:</strong> MS Excel Functions</p>
+                    <a href="https://docs.google.com/spreadsheets/d/1t2l22M_VerUlLBB_NrwXq0-TfKNY8k_NABk5x71XlPY/edit?usp=sharing" target="_blank">Open File</a>
+                    <img src="image/MS_Excel.png" class="task-screenshot-img" alt="Task 2 Screenshot">
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image"><i class="fas fa-laptop-code"></i></div>
+                <div class="project-info">
+                    <h3>Practice Task 3</h3>
+                    <p class="task-description"><strong>Description:</strong> Creating Dashboards in Excel</p>
+                    <a href="https://docs.google.com/spreadsheets/d/1fzZcKBqOv9z1Jhvgl-vNcsFWrE5sqw-e/edit?usp=sharing" target="_blank">Open File</a>
+                    <img src="image/Demo.png" class="task-screenshot-img" alt="Task 3 Screenshot">
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image"><i class="fas fa-laptop-code"></i></div>
+                <div class="project-info">
+                    <h3>Practice Task 4</h3>
+                    <p class="task-description"><strong>Description:</strong> Power Query Demo</p>
+                    <a href="https://docs.google.com/spreadsheets/d/19eDZbMTbXZ2y3vjDsdMGWb0uF8z-7LpG/edit?usp=sharing" target="_blank">Open File</a>
+                    <img src="image/PowerQuery.png" class="task-screenshot-img" alt="Task 4 Screenshot">
+                </div>
             </div>
         </div>
+    </div>
 
-        <div class="project-card">
-            <div class="project-image"><i class="fas fa-laptop-code"></i></div>
-            <div class="project-info">
-                <h3>Practice Task 2</h3>
-                <p class="task-description"><strong>Description:</strong> MS Excel Functions</p>
-                <a href="https://docs.google.com/spreadsheets/d/1t2l22M_VerUlLBB_NrwXq0-TfKNY8k_NABk5x71XlPY/edit?usp=sharing" target="_blank">Open File</a>
-                <img src="image/MS_Excel.png" class="task-screenshot-img" alt="Task 2 Screenshot">
+    <div id="midterm-tasks" class="tab-content">
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image"><i class="fas fa-laptop-code"></i></div>
+                <div class="project-info">
+                    <h3>Midterm Task #1</h3>
+                    <p class="task-description"><strong>Description:</strong> ERD Model</p>
+                    <a href="https://docs.google.com/spreadsheets/d/1Jelg8obph0P0kQCBHMdUEuQZrDXbtVu8/edit?usp=drive_link" target="_blank">Open File</a>
+                    <img src="image/ERD MODEL PIC.png" class="task-screenshot-img" alt="Midterm 1 Screenshot">
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image"><i class="fas fa-laptop-code"></i></div>
+                <div class="project-info">
+                    <h3>Midterm Task #2</h3>
+                    <p class="task-description"><strong>Description:</strong> Pivot Tables and Charts</p>
+                    <a href="https://docs.google.com/spreadsheets/d/1Qcu77f6IHU7qVrtIbNexlBboZjOi3rza/edit?usp=sharing" target="_blank">Open File</a>
+                    <img src="image/Bike_Sale_Pivot.png" class="task-screenshot-img" alt="Midterm 2 Screenshot">
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image"><i class="fas fa-laptop-code"></i></div>
+                <div class="project-info">
+                    <h3>Midterm Task #3</h3>
+                    <p class="task-description"><strong>Description:</strong> Data Model</p>
+                    <a href="https://docs.google.com/spreadsheets/d/1GSarYnNgvvRo9Qjiu39LKMeUZXn7w8ZV/edit?usp=sharing" target="_blank">Open File</a>
+                    <img src="image/Data_Model.png" class="task-screenshot-img" alt="Midterm 3 Screenshot">
+                </div>
             </div>
         </div>
+    </div>
 
-        <div class="project-card">
-            <div class="project-image"><i class="fas fa-laptop-code"></i></div>
-            <div class="project-info">
-                <h3>Practice Task 3</h3>
-                <p class="task-description"><strong>Description:</strong> Creating Dashboards in Excel</p>
-                <a href="https://docs.google.com/spreadsheets/d/1fzZcKBqOv9z1Jhvgl-vNcsFWrE5sqw-e/edit?usp=sharing" target="_blank">Open File</a>
-                <img src="image/Demo.png" class="task-screenshot-img" alt="Task 3 Screenshot">
+    <<div id="finals-tasks" class="tab-content">
+        <div class="projects-grid">
+
+            <!-- Final Task 1 -->
+            <div class="project-card">
+                <div class="project-image"><i class="fas fa-mobile-alt"></i></div>
+                <div class="project-info">
+                    <h3>Finals Task 1</h3>
+                    <p class="task-description"><strong>Description:</strong>Finals Practice Task 1</p>
+                    <a href="https://drive.google.com/file/d/1aAUrVqanBIGQFlG_i6rTu477TEaLMnx2/view" target="_blank">Open File</a>
+                    <img src="Finals_Practice_Task#1.png" class="task-screenshot-img" alt="Finals Task 1 Screenshot">
+                </div>
             </div>
-        </div>
 
-        <div class="project-card">
-            <div class="project-image"><i class="fas fa-laptop-code"></i></div>
-            <div class="project-info">
-                <h3>Practice Task 4</h3>
-                <p class="task-description"><strong>Description:</strong> Power Query Demo</p>
-                <a href="https://docs.google.com/spreadsheets/d/19eDZbMTbXZ2y3vjDsdMGWb0uF8z-7LpG/edit?usp=sharing" target="_blank">Open File</a>
-                <img src="image/PowerQuery.png" class="task-screenshot-img" alt="Task 4 Screenshot">
+            <!-- Final Task 2 -->
+            <div class="project-card">
+                <div class="project-image"><i class="fas fa-chart-bar"></i></div>
+                <div class="project-info">
+                    <h3>Finals Task 2</h3>
+                    <p class="task-description"><strong>Description:</strong> Advanced Data Analytics & Power BI Interactive Dashboard</p>
+                    <a href="#" target="_blank">Open File</a>
+                    <img src="image/Finals_Task2.png" class="task-screenshot-img" alt="Finals Task 2 Screenshot">
+                </div>
             </div>
-        </div>
 
+            <!-- Final Task 3 -->
+            <div class="project-card">
+                <div class="project-image"><i class="fas fa-microchip"></i></div>
+                <div class="project-info">
+                    <h3>Finals Task 3</h3>
+                    <p class="task-description"><strong>Description:</strong> IoT Hardware-Software Sensor Integration Module</p>
+                    <a href="#" target="_blank">Open File</a>
+                    <img src="image/Finals_Task3.png" class="task-screenshot-img" alt="Finals Task 3 Screenshot">
+                </div>
+            </div>
+
+            <!-- Final Task 4 -->
+            <div class="project-card">
+                <div class="project-image"><i class="fas fa-network-wired"></i></div>
+                <div class="project-info">
+                    <h3>Finals Task 4</h3>
+                    <p class="task-description"><strong>Description:</strong> Enterprise Network Simulation & OSPF Routing Implementation</p>
+                    <a href="#" target="_blank">Open File</a>
+                    <img src="image/Finals_Task4.png" class="task-screenshot-img" alt="Finals Task 4 Screenshot">
+                </div>
+            </div>
+
+            <!-- Final Task 5 -->
+            <div class="project-card">
+                <div class="project-image"><i class="fas fa-project-diagram"></i></div>
+                <div class="project-info">
+                    <h3>Finals Task 5</h3>
+                    <p class="task-description"><strong>Description:</strong> Deterministic Finite Automata (DFA) Transition System Parser</p>
+                    <a href="#" target="_blank">Open File</a>
+                    <img src="image/Finals_Task5.png" class="task-screenshot-img" alt="Finals Task 5 Screenshot">
+                </div>
+            </div>
+
+            <!-- Final Task 6 -->
+            <div class="project-card">
+                <div class="project-image"><i class="fas fa-database"></i></div>
+                <div class="project-info">
+                    <h3>Finals Task 6</h3>
+                    <p class="task-description"><strong>Description:</strong> Complete Database Schema & Complex SQL Query Structuring</p>
+                    <a href="#" target="_blank">Open File</a>
+                    <img src="image/Finals_Task6.png" class="task-screenshot-img" alt="Finals Task 6 Screenshot">
+                </div>
+            </div>
+
+        </div>
     </div>
 </section>
-
-<section id="midterm">
-    <h2 class="section-title"><span>Midterm Tasks</span></h2>
-    <div class="projects-grid">
-
-        <div class="project-card">
-            <div class="project-image"><i class="fas fa-laptop-code"></i></div>
-            <div class="project-info">
-                <h3>Midterm Task #1</h3>
-                <p class="task-description"><strong>Description:</strong> ERD Model</p>
-                <a href="https://docs.google.com/spreadsheets/d/1Jelg8obph0P0kQCBHMdUEuQZrDXbtVu8/edit?usp=drive_link" target="_blank">Open File</a>
-                <img src="image/ERD MODEL PIC.png" class="task-screenshot-img" alt="Midterm 1 Screenshot">
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-image"><i class="fas fa-laptop-code"></i></div>
-            <div class="project-info">
-                <h3>Midterm Task #2</h3>
-                <p class="task-description"><strong>Description:</strong> Pivot Tables and Charts</p>
-                <a href="https://docs.google.com/spreadsheets/d/1Qcu77f6IHU7qVrtIbNexlBboZjOi3rza/edit?usp=sharing" target="_blank">Open File</a>
-                <img src="image/Bike_Sale_Pivot.png" class="task-screenshot-img" alt="Midterm 2 Screenshot">
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-image"><i class="fas fa-laptop-code"></i></div>
-            <div class="project-info">
-                <h3>Midterm Task #3</h3>
-                <p class="task-description"><strong>Description:</strong> Data Model</p>
-                <a href="https://docs.google.com/spreadsheets/d/1GSarYnNgvvRo9Qjiu39LKMeUZXn7w8ZV/edit?usp=sharing" target="_blank">Open File</a>
-                <img src="image/Data_Model.png" class="task-screenshot-img" alt="Midterm 3 Screenshot">
-            </div>
-        </div>
-
-    </div>
-</section>
-
 <section id="contact">
     <h2 class="section-title"><span>Contact Me</span></h2>
     <div class="contact-container">
@@ -156,9 +231,29 @@
 </footer>
 
 <script>
+// Mobile Responsive Menu Toggle
 const btn = document.getElementById('menu-btn');
 const nav = document.getElementById('nav-links');
 btn.onclick = () => nav.classList.toggle('active');
+
+// Interactive Tab Switcher Logic
+function openTab(evt, tabName) {
+    // Hide all tab contents
+    const tabContents = document.getElementsByClassName("tab-content");
+    for (let i = 0; i < tabContents.length; i++) {
+        tabContents[i].classList.remove("active-content");
+    }
+
+    // Remove active status from all tab buttons
+    const tabButtons = document.getElementsByClassName("tab-btn");
+    for (let i = 0; i < tabButtons.length; i++) {
+        tabButtons[i].classList.remove("active");
+    }
+
+    // Show the targeted tab, and mark the clicked button as active
+    document.getElementById(tabName).classList.add("active-content");
+    evt.currentTarget.classList.add("active");
+}
 </script>
 
 </body>
